@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Axentra</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="bg-anim"></div>
+
+  <main class="container">
+    <header class="brand">
+      <h1>Axentra </span>AI</h1>
+      <p class="tag">High-quality visuals • Fast results</p>
+    </header>
+
+    <section class="card glass">
+      <form id="promptForm">
+        <label for="prompt">Ask the AI anything</label>
+        <textarea id="prompt" placeholder="Type your prompt here..." rows="4" required></textarea>
+
+        <div class="controls">
+          <button type="submit" id="submitBtn">Generate</button>
+          <button type="button" id="clearBtn" class="muted">Clear</button>
+        </div>
+      </form>
+
+      <div id="resultWrap" class="result glass hidden">
+        <h2>AI Answer</h2>
+        <pre id="result">—</pre>
+        <div class="result-actions">
+          <button id="copyBtn">Copy</button>
+          <button id="downloadBtn">Download .txt</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="credits">Made by Axentra Company | Powered by Cohere</footer>
+  </main>
+
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
